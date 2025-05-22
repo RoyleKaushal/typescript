@@ -1,0 +1,28 @@
+let _id: number = 123;
+let _name: string = 'Kaushal';
+let _class = 2;
+let _value: string | number = 12;
+
+function checkEvenOdd( val: number ){
+    if ( val % 2 == 0 ){
+        console.log('Even Number...');
+    } else {
+        console.log('Odd Number...');
+    } 
+}
+
+function getValue (val: unknown) {
+    if ( typeof val == 'string' ) console.log("Value is string...");
+    else if ( typeof val == 'number' ) console.log("Value is number...");
+    else console.log("Value is unknown...");
+}
+
+_value = 'Kiwi';
+
+getValue('Kaushal');
+getValue(26);
+getValue(false);
+
+checkEvenOdd(12);
+
+console.log(_name, _id, _class);
